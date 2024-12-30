@@ -25,8 +25,8 @@
 #  define BUFFER_SIZE 42
 # endif
 
-# ifndef BUFFER_MAX
-#  define BUFFER_MAX 4242
+# ifndef FDS_MAX
+#  define FDS_MAX 4242
 # endif
 
 //              Functions

@@ -96,7 +96,7 @@ char	*get_next(char *str)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	*save[BUFFER_MAX];
+	static char	*save[FDS_MAX];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
