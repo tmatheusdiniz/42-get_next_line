@@ -47,6 +47,11 @@ This project is short, so you won't have much work to code it.
 ```sh
 $ cc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c -o {PROGRAM_NAME_CHOSEN]
 ```
+<i>With bonus part</i>
+```sh
+$ cc -Wall -Wextra -Werror main.c get_next_line_bonus.c get_next_line_utils_bonus.c -o {PROGRAM_NAME_CHOSEN]
+```
+<b>you can also use the -D BUFFER_SIZE=NUMBER option to be able to define the buffer size.</b>
 
 ## 🧪 Testing
 I created my own tests for this project, and also used some tests i found in other repositories, here they are:
