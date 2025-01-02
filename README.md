@@ -30,10 +30,11 @@
 
 > The aim of this project is to code a function that reads a file line by line, manipulating one or more file descriptors.
 
-### Resources i used for code it
+### 🛠️ Resources i used for code it
 [C language Docs](https://www.gnu.org/software/c-intro-and-ref/manual/c-intro-and-ref.html)
 
-Look for functions open, read and write. In addition, looks for statics variable.
+Try to learn about open, read and write functions. Also, learn how you can use static variables.
+
 This project is short, so you won't have much work to code it.
 
 ## ⚙️ Usage
@@ -42,10 +43,17 @@ This project is short, so you won't have much work to code it.
 > you should create a main.c file to be able to use the get_next_line() function.
 > 
 > don't forget include the get_next_line.h in the header.
-### Compilation
+### 📦 Compilation
 ```sh
-$ cc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c -o {NAME_PROGRAM_CHOOSE]
+$ cc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c -o {PROGRAM_NAME_CHOSEN]
 ```
+
+## 🧪 Testing
+I created my own tests for this project, and also used some tests i found in other repositories, here they are:
+
+[gnlTester](https://github.com/Tripouille/gnlTester)
+
+[gnl-station-tester](https://github.com/kodpe/gnl-station-tester)
 
 ## 📞 Contact me
 
