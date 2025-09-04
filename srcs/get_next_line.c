@@ -15,7 +15,7 @@
 char	*get_read(int fd, char *str)
 {
 	char	*readed;
-	int		aux;	
+	int		aux;
 
 	readed = ft_calloc(sizeof(char), BUFFER_SIZE + 1);
 	if (!readed)
@@ -94,11 +94,19 @@ char	*get_next(char *str)
 	return (next);
 }
 
+// I've added if (fd == -4) for cases where i wanna free the next line.
+
 char	*get_next_line(int fd)
 {
 	char		*line;
 	static char	*save;
 
+	if (fd == -4)
+	{
+		if (save)
+			free (save);
+		return (NULL);
+	}
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	save = get_read(fd, save);

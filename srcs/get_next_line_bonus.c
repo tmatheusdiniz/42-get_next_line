@@ -93,11 +93,19 @@ char	*get_next(char *str)
 	return (free(str), next);
 }
 
-char	*get_next_line(int fd)
+// if flag != 0 i have to free save in that fd
+
+char	*get_next_line(int fd, int flag)
 {
 	char		*line;
 	static char	*save[FDS_MAX];
 
+	if (flag)
+	{
+		if (save[fd])
+			free (save[fd]);
+		return (NULL);
+	}
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	save[fd] = get_read(fd, save[fd]);

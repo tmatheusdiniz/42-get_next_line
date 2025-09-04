@@ -31,7 +31,7 @@
 
 //              Functions
 
-char	*get_next_line(int fd);
+char	*get_next_line(int fd, int flag);
 char	*get_next(char *next_str);
 char	*get_line(char *str);
 char	*get_read(int fd, char *str);
